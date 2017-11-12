@@ -1,0 +1,266 @@
+[
+  {
+    "comments": [
+      {
+        "line": 2,
+        "value": "# language: id"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Memasukan User Baru",
+        "description": "",
+        "id": "mengelola-user;memasukan-user-baru",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 99339062,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Data user baru yang akan dimasukan tersedia dan tidak duplikasi",
+            "match": {
+              "location": "DemoContext.data_user_baru_yang_akan_dimasukan_tersedia_dan_tidak_duplikasi()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 27260,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Memasukan data user",
+            "match": {
+              "location": "DemoContext.memasukan_data_user()"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 3200395,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "respon \"user sukses dimasukan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user sukses dimasukan",
+                  "offset": 8
+                }
+              ],
+              "location": "DemoContext.respon(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Normal"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Memasukan User Baru",
+        "description": "",
+        "id": "mengelola-user;memasukan-user-baru",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 40692,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Data user baru yang akan dimasukan tersedia dan tidak duplikasi",
+            "match": {
+              "location": "DemoContext.data_user_baru_yang_akan_dimasukan_tersedia_dan_tidak_duplikasi()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 25679,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Memasukan data user",
+            "match": {
+              "location": "DemoContext.memasukan_data_user()"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 76642,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "respon gagal dengan pesan \"duplicate\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "duplicate",
+                  "offset": 27
+                }
+              ],
+              "location": "DemoContext.respon_gagal_dengan_pesan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@Duplikat"
+          }
+        ]
+      }
+    ],
+    "name": "Mengelola User",
+    "description": "     Mengelola data user",
+    "id": "mengelola-user",
+    "keyword": "Fitur",
+    "uri": "com/mycompany/demoo/test/DemooTest.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language : id"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Memasukan Informasi username dan password",
+        "description": "",
+        "id": "melakukan-login;memasukan-informasi-username-dan-password",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 62024,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Data username dan password akan dimasukan tersedia dan sesuai",
+            "match": {
+              "location": "DemoContext.data_username_dan_password_akan_dimasukan_tersedia_dan_sesuai()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 32000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Memasukan data username dan password",
+            "match": {
+              "location": "DemoContext.memasukan_data_username_dan_password()"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 105877,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "respon login \"anda telah berhasil login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "anda telah berhasil login",
+                  "offset": 14
+                }
+              ],
+              "location": "DemoContext.respon_login(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Normal"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Memasukan Memasukan Informasi username dan password",
+        "description": "",
+        "id": "melakukan-login;memasukan-memasukan-informasi-username-dan-password",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 51753,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Data username dan password yang akan dimasukan tidak tersedia",
+            "match": {
+              "location": "DemoContext.data_username_dan_password_yang_akan_dimasukan_tidak_tersedia()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 28049,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Memasukan data username dan password",
+            "match": {
+              "location": "DemoContext.memasukan_data_username_dan_password()"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 59655,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "respon login gagal dengan pesan \"username dan password tidak terdaftar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username dan password tidak terdaftar",
+                  "offset": 33
+                }
+              ],
+              "location": "DemoContext.respon_login_gagal_dengan_pesan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Gagal"
+          }
+        ]
+      }
+    ],
+    "name": "Melakukan Login",
+    "description": "     Memasukkan data username dan password",
+    "id": "melakukan-login",
+    "keyword": "Fitur",
+    "uri": "com/mycompany/demoo/test/Login.feature"
+  }
+]
