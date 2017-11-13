@@ -45,14 +45,14 @@ formatter.match({
   "location": "DemoContext.data_user_baru_yang_akan_dimasukan_tersedia_dan_tidak_duplikasi()"
 });
 formatter.result({
-  "duration": 92381630,
+  "duration": 102313482,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoContext.memasukan_data_user()"
 });
 formatter.result({
-  "duration": 35160,
+  "duration": 27259,
   "status": "passed"
 });
 formatter.match({
@@ -65,7 +65,7 @@ formatter.match({
   "location": "DemoContext.respon(String)"
 });
 formatter.result({
-  "duration": 5073777,
+  "duration": 2040099,
   "status": "passed"
 });
 formatter.scenario({
@@ -101,14 +101,14 @@ formatter.match({
   "location": "DemoContext.data_user_baru_yang_akan_dimasukan_tersedia_dan_tidak_duplikasi()"
 });
 formatter.result({
-  "duration": 38321,
+  "duration": 23704,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoContext.memasukan_data_user()"
 });
 formatter.result({
-  "duration": 22519,
+  "duration": 11852,
   "status": "passed"
 });
 formatter.match({
@@ -121,7 +121,133 @@ formatter.match({
   "location": "DemoContext.respon_gagal_dengan_pesan(String)"
 });
 formatter.result({
-  "duration": 75457,
+  "duration": 44642,
+  "status": "passed"
+});
+formatter.uri("com/mycompany/demoo/test/Laporan.feature");
+formatter.feature({
+  "comments": [
+    {
+      "line": 1,
+      "value": "# language: id"
+    }
+  ],
+  "line": 3,
+  "name": "Laporan barang",
+  "description": "     Mengelola laporan barang",
+  "id": "laporan-barang",
+  "keyword": "Fitur"
+});
+formatter.scenario({
+  "line": 7,
+  "name": "Laporan",
+  "description": "",
+  "id": "laporan-barang;laporan",
+  "type": "scenario",
+  "keyword": "Skenario",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@Normal"
+    }
+  ]
+});
+formatter.step({
+  "line": 8,
+  "name": "Data data barang user yang akan dilihat tersedia dan tidak duplikasi",
+  "keyword": "Dengan "
+});
+formatter.step({
+  "line": 9,
+  "name": "Akan melihat laporan",
+  "keyword": "Ketika "
+});
+formatter.step({
+  "line": 10,
+  "name": "responnya adalah \"Laporan akan dilampirkan\"",
+  "keyword": "Maka "
+});
+formatter.match({
+  "location": "DemoContext.data_data_barang_user_yang_akan_dilihat_tersedia_dan_tidak_duplikasi()"
+});
+formatter.result({
+  "duration": 48198,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DemoContext.akan_melihat_laporan()"
+});
+formatter.result({
+  "duration": 22519,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Laporan akan dilampirkan",
+      "offset": 18
+    }
+  ],
+  "location": "DemoContext.responnya_adalah(String)"
+});
+formatter.result({
+  "duration": 65185,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 13,
+  "name": "Laporan",
+  "description": "",
+  "id": "laporan-barang;laporan",
+  "type": "scenario",
+  "keyword": "Skenario",
+  "tags": [
+    {
+      "line": 12,
+      "name": "@Duplikat"
+    }
+  ]
+});
+formatter.step({
+  "line": 14,
+  "name": "Data data barang user yang akan dilihat tersedia dan tidak duplikasi",
+  "keyword": "Dengan "
+});
+formatter.step({
+  "line": 15,
+  "name": "Akan melihat laporan",
+  "keyword": "Ketika "
+});
+formatter.step({
+  "line": 16,
+  "name": "responnya adalah gagal dengan pesan \"laporan duplicate\"",
+  "keyword": "Maka "
+});
+formatter.match({
+  "location": "DemoContext.data_data_barang_user_yang_akan_dilihat_tersedia_dan_tidak_duplikasi()"
+});
+formatter.result({
+  "duration": 29629,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DemoContext.akan_melihat_laporan()"
+});
+formatter.result({
+  "duration": 15803,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "laporan duplicate",
+      "offset": 37
+    }
+  ],
+  "location": "DemoContext.responnya_adalah_gagal_dengan_pesan(String)"
+});
+formatter.result({
+  "duration": 51358,
   "status": "passed"
 });
 formatter.uri("com/mycompany/demoo/test/Login.feature");
@@ -171,14 +297,14 @@ formatter.match({
   "location": "DemoContext.data_username_dan_password_akan_dimasukan_tersedia_dan_sesuai()"
 });
 formatter.result({
-  "duration": 59654,
+  "duration": 38716,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoContext.memasukan_data_username_dan_password()"
 });
 formatter.result({
-  "duration": 37531,
+  "duration": 20148,
   "status": "passed"
 });
 formatter.match({
@@ -191,7 +317,7 @@ formatter.match({
   "location": "DemoContext.respon_login(String)"
 });
 formatter.result({
-  "duration": 114963,
+  "duration": 49778,
   "status": "passed"
 });
 formatter.scenario({
@@ -227,14 +353,14 @@ formatter.match({
   "location": "DemoContext.data_username_dan_password_yang_akan_dimasukan_tidak_tersedia()"
 });
 formatter.result({
-  "duration": 66370,
+  "duration": 43457,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoContext.memasukan_data_username_dan_password()"
 });
 formatter.result({
-  "duration": 31605,
+  "duration": 26074,
   "status": "passed"
 });
 formatter.match({
@@ -247,7 +373,7 @@ formatter.match({
   "location": "DemoContext.respon_login_gagal_dengan_pesan(String)"
 });
 formatter.result({
-  "duration": 78222,
+  "duration": 69531,
   "status": "passed"
 });
 formatter.uri("com/mycompany/demoo/test/Mengelolabarang.feature");
@@ -297,14 +423,14 @@ formatter.match({
   "location": "DemoContext.data_barang_yang_akan_dimasukkan_tersedia_dan_tidak_duplikasi()"
 });
 formatter.result({
-  "duration": 46222,
+  "duration": 58864,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoContext.memasukkan_data_barang()"
 });
 formatter.result({
-  "duration": 23704,
+  "duration": 20544,
   "status": "passed"
 });
 formatter.match({
@@ -317,7 +443,7 @@ formatter.match({
   "location": "DemoContext.respon_menjadi(String)"
 });
 formatter.result({
-  "duration": 90075,
+  "duration": 48198,
   "status": "passed"
 });
 formatter.scenario({
@@ -353,14 +479,14 @@ formatter.match({
   "location": "DemoContext.data_barang_baru_yang_akan_dimasukkan_tersedia_dan_tidak_duplikasi()"
 });
 formatter.result({
-  "duration": 65975,
+  "duration": 35555,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoContext.memasukkan_data_barang()"
 });
 formatter.result({
-  "duration": 24889,
+  "duration": 15803,
   "status": "passed"
 });
 formatter.match({
@@ -373,7 +499,7 @@ formatter.match({
   "location": "DemoContext.respon_akan_gagal_dengan_pesan(String)"
 });
 formatter.result({
-  "duration": 79407,
+  "duration": 60840,
   "status": "passed"
 });
 });

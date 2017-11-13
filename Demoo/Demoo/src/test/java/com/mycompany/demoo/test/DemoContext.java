@@ -145,4 +145,40 @@ public void respon_akan_gagal_dengan_pesan(String arg1) throws Throwable {
         String result = "duplikat";
         Assert.assertEquals(arg1, result);
 }
+
+@Dengan("^Data data barang user yang akan dilihat tersedia dan tidak duplikasi$")
+public void data_data_barang_user_yang_akan_dilihat_tersedia_dan_tidak_duplikasi() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+
+        boolean expected = false;
+        ///kode untuk cek ke database apakah user sudah ada
+        boolean result = false;///harusnya dari database
+        Assert.assertEquals(expected, result);
+}
+
+@Ketika("^Akan melihat laporan$")
+public void akan_melihat_laporan() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+   
+        boolean expected = false;
+        ///kode untuk cek ke database apakah user sudah ada
+        boolean result = false;///harusnya dari database
+        Assert.assertEquals(expected, result);
+}
+
+@Maka("^responnya adalah \"([^\"]*)\"$")
+public void responnya_adalah(String arg1) throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+  
+        String result = "Laporan akan dilampirkan";
+        Assert.assertEquals(arg1, result);
+}
+
+@Maka("^responnya adalah gagal dengan pesan \"([^\"]*)\"$")
+public void responnya_adalah_gagal_dengan_pesan(String arg1) throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+   
+        String result = "laporan duplicate";
+        Assert.assertEquals(arg1, result);
+}
 }

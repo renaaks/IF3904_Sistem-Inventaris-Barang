@@ -18,7 +18,7 @@
         "steps": [
           {
             "result": {
-              "duration": 92381630,
+              "duration": 102313482,
               "status": "passed"
             },
             "line": 9,
@@ -30,7 +30,7 @@
           },
           {
             "result": {
-              "duration": 35160,
+              "duration": 27259,
               "status": "passed"
             },
             "line": 10,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 5073777,
+              "duration": 2040099,
               "status": "passed"
             },
             "line": 11,
@@ -76,7 +76,7 @@
         "steps": [
           {
             "result": {
-              "duration": 38321,
+              "duration": 23704,
               "status": "passed"
             },
             "line": 15,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 22519,
+              "duration": 11852,
               "status": "passed"
             },
             "line": 16,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 75457,
+              "duration": 44642,
               "status": "passed"
             },
             "line": 17,
@@ -135,6 +135,138 @@
     "comments": [
       {
         "line": 1,
+        "value": "# language: id"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Laporan",
+        "description": "",
+        "id": "laporan-barang;laporan",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 48198,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Data data barang user yang akan dilihat tersedia dan tidak duplikasi",
+            "match": {
+              "location": "DemoContext.data_data_barang_user_yang_akan_dilihat_tersedia_dan_tidak_duplikasi()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 22519,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Akan melihat laporan",
+            "match": {
+              "location": "DemoContext.akan_melihat_laporan()"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 65185,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "responnya adalah \"Laporan akan dilampirkan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Laporan akan dilampirkan",
+                  "offset": 18
+                }
+              ],
+              "location": "DemoContext.responnya_adalah(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Normal"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Laporan",
+        "description": "",
+        "id": "laporan-barang;laporan",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29629,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Data data barang user yang akan dilihat tersedia dan tidak duplikasi",
+            "match": {
+              "location": "DemoContext.data_data_barang_user_yang_akan_dilihat_tersedia_dan_tidak_duplikasi()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 15803,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Akan melihat laporan",
+            "match": {
+              "location": "DemoContext.akan_melihat_laporan()"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 51358,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "responnya adalah gagal dengan pesan \"laporan duplicate\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "laporan duplicate",
+                  "offset": 37
+                }
+              ],
+              "location": "DemoContext.responnya_adalah_gagal_dengan_pesan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Duplikat"
+          }
+        ]
+      }
+    ],
+    "name": "Laporan barang",
+    "description": "     Mengelola laporan barang",
+    "id": "laporan-barang",
+    "keyword": "Fitur",
+    "uri": "com/mycompany/demoo/test/Laporan.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
         "value": "# language : id"
       }
     ],
@@ -150,7 +282,7 @@
         "steps": [
           {
             "result": {
-              "duration": 59654,
+              "duration": 38716,
               "status": "passed"
             },
             "line": 8,
@@ -162,7 +294,7 @@
           },
           {
             "result": {
-              "duration": 37531,
+              "duration": 20148,
               "status": "passed"
             },
             "line": 9,
@@ -174,7 +306,7 @@
           },
           {
             "result": {
-              "duration": 114963,
+              "duration": 49778,
               "status": "passed"
             },
             "line": 10,
@@ -208,7 +340,7 @@
         "steps": [
           {
             "result": {
-              "duration": 66370,
+              "duration": 43457,
               "status": "passed"
             },
             "line": 14,
@@ -220,7 +352,7 @@
           },
           {
             "result": {
-              "duration": 31605,
+              "duration": 26074,
               "status": "passed"
             },
             "line": 15,
@@ -232,7 +364,7 @@
           },
           {
             "result": {
-              "duration": 78222,
+              "duration": 69531,
               "status": "passed"
             },
             "line": 16,
@@ -282,7 +414,7 @@
         "steps": [
           {
             "result": {
-              "duration": 46222,
+              "duration": 58864,
               "status": "passed"
             },
             "line": 8,
@@ -294,7 +426,7 @@
           },
           {
             "result": {
-              "duration": 23704,
+              "duration": 20544,
               "status": "passed"
             },
             "line": 9,
@@ -306,7 +438,7 @@
           },
           {
             "result": {
-              "duration": 90075,
+              "duration": 48198,
               "status": "passed"
             },
             "line": 10,
@@ -340,7 +472,7 @@
         "steps": [
           {
             "result": {
-              "duration": 65975,
+              "duration": 35555,
               "status": "passed"
             },
             "line": 14,
@@ -352,7 +484,7 @@
           },
           {
             "result": {
-              "duration": 24889,
+              "duration": 15803,
               "status": "passed"
             },
             "line": 15,
@@ -364,7 +496,7 @@
           },
           {
             "result": {
-              "duration": 79407,
+              "duration": 60840,
               "status": "passed"
             },
             "line": 16,
