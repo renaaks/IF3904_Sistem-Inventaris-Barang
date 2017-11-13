@@ -18,7 +18,7 @@
         "steps": [
           {
             "result": {
-              "duration": 99339062,
+              "duration": 101310420,
               "status": "passed"
             },
             "line": 9,
@@ -30,7 +30,7 @@
           },
           {
             "result": {
-              "duration": 27260,
+              "duration": 28840,
               "status": "passed"
             },
             "line": 10,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 3200395,
+              "duration": 3181037,
               "status": "passed"
             },
             "line": 11,
@@ -76,7 +76,7 @@
         "steps": [
           {
             "result": {
-              "duration": 40692,
+              "duration": 37925,
               "status": "passed"
             },
             "line": 15,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 25679,
+              "duration": 28049,
               "status": "passed"
             },
             "line": 16,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 76642,
+              "duration": 81382,
               "status": "passed"
             },
             "line": 17,
@@ -150,7 +150,7 @@
         "steps": [
           {
             "result": {
-              "duration": 62024,
+              "duration": 78222,
               "status": "passed"
             },
             "line": 8,
@@ -162,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 32000,
+              "duration": 53334,
               "status": "passed"
             },
             "line": 9,
@@ -174,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 105877,
+              "duration": 76642,
               "status": "passed"
             },
             "line": 10,
@@ -208,7 +208,7 @@
         "steps": [
           {
             "result": {
-              "duration": 51753,
+              "duration": 48988,
               "status": "passed"
             },
             "line": 14,
@@ -220,7 +220,7 @@
           },
           {
             "result": {
-              "duration": 28049,
+              "duration": 27259,
               "status": "passed"
             },
             "line": 15,
@@ -232,7 +232,7 @@
           },
           {
             "result": {
-              "duration": 59655,
+              "duration": 84149,
               "status": "passed"
             },
             "line": 16,
@@ -262,5 +262,137 @@
     "id": "melakukan-login",
     "keyword": "Fitur",
     "uri": "com/mycompany/demoo/test/Login.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language : id"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Mengelola Data Barang Baru",
+        "description": "",
+        "id": "mengelola-barang;mengelola-data-barang-baru",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56889,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Data barang yang akan dimasukkan tersedia dan tidak duplikasi",
+            "match": {
+              "location": "DemoContext.data_barang_yang_akan_dimasukkan_tersedia_dan_tidak_duplikasi()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 33186,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Memasukkan data barang",
+            "match": {
+              "location": "DemoContext.memasukkan_data_barang()"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 95210,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "respon menjadi \"data barang sukses dimasukan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "data barang sukses dimasukan",
+                  "offset": 16
+                }
+              ],
+              "location": "DemoContext.respon_menjadi(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Normal"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Mengelola Data Barang Baru",
+        "description": "",
+        "id": "mengelola-barang;mengelola-data-barang-baru",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 87704,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Data barang baru yang akan dimasukkan tersedia dan tidak duplikasi",
+            "match": {
+              "location": "DemoContext.data_barang_baru_yang_akan_dimasukkan_tersedia_dan_tidak_duplikasi()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 155259,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Memasukkan data barang",
+            "match": {
+              "location": "DemoContext.memasukkan_data_barang()"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 89679,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "respon akan gagal dengan pesan \"duplikat\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "duplikat",
+                  "offset": 32
+                }
+              ],
+              "location": "DemoContext.respon_akan_gagal_dengan_pesan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Duplikat"
+          }
+        ]
+      }
+    ],
+    "name": "Mengelola barang",
+    "description": "     Mengelola data barang",
+    "id": "mengelola-barang",
+    "keyword": "Fitur",
+    "uri": "com/mycompany/demoo/test/Mengelolabarang.feature"
   }
 ]

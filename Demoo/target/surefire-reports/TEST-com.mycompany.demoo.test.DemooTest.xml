@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.mycompany.demoo.test.DemooTest" time="0.006" tests="16" errors="0" skipped="0" failures="0">
+<testsuite name="com.mycompany.demoo.test.DemooTest" time="0.004" tests="24" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
@@ -62,20 +62,28 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Dengan Data user baru yang akan dimasukan tersedia dan tidak duplikasi" classname="Skenario: Memasukan User Baru" time="0.001"/>
+  <testcase name="Dengan Data user baru yang akan dimasukan tersedia dan tidak duplikasi" classname="Skenario: Memasukan User Baru" time="0.002"/>
   <testcase name="Ketika Memasukan data user" classname="Skenario: Memasukan User Baru" time="0"/>
-  <testcase name="Maka respon &quot;user sukses dimasukan&quot;" classname="Skenario: Memasukan User Baru" time="0.001"/>
-  <testcase name="Skenario: Memasukan User Baru" classname="Skenario: Memasukan User Baru" time="0.001"/>
-  <testcase name="Dengan Data user baru yang akan dimasukan tersedia dan tidak duplikasi" classname="Skenario: Memasukan User Baru" time="0"/>
+  <testcase name="Maka respon &quot;user sukses dimasukan&quot;" classname="Skenario: Memasukan User Baru" time="0"/>
+  <testcase name="Skenario: Memasukan User Baru" classname="Skenario: Memasukan User Baru" time="0"/>
+  <testcase name="Dengan Data user baru yang akan dimasukan tersedia dan tidak duplikasi" classname="Skenario: Memasukan User Baru" time="0.002"/>
   <testcase name="Ketika Memasukan data user" classname="Skenario: Memasukan User Baru" time="0"/>
   <testcase name="Maka respon gagal dengan pesan &quot;duplicate&quot;" classname="Skenario: Memasukan User Baru" time="0"/>
   <testcase name="Skenario: Memasukan User Baru" classname="Skenario: Memasukan User Baru" time="0"/>
   <testcase name="Dengan Data username dan password akan dimasukan tersedia dan sesuai" classname="Skenario: Memasukan Informasi username dan password" time="0"/>
   <testcase name="Ketika Memasukan data username dan password" classname="Skenario: Memasukan Informasi username dan password" time="0"/>
-  <testcase name="Maka respon login &quot;anda telah berhasil login&quot;" classname="Skenario: Memasukan Informasi username dan password" time="0.001"/>
-  <testcase name="Skenario: Memasukan Informasi username dan password" classname="Skenario: Memasukan Informasi username dan password" time="0.002"/>
+  <testcase name="Maka respon login &quot;anda telah berhasil login&quot;" classname="Skenario: Memasukan Informasi username dan password" time="0"/>
+  <testcase name="Skenario: Memasukan Informasi username dan password" classname="Skenario: Memasukan Informasi username dan password" time="0"/>
   <testcase name="Dengan Data username dan password yang akan dimasukan tidak tersedia" classname="Skenario: Memasukan Memasukan Informasi username dan password" time="0"/>
   <testcase name="Ketika Memasukan data username dan password" classname="Skenario: Memasukan Memasukan Informasi username dan password" time="0"/>
   <testcase name="Maka respon login gagal dengan pesan &quot;username dan password tidak terdaftar&quot;" classname="Skenario: Memasukan Memasukan Informasi username dan password" time="0"/>
   <testcase name="Skenario: Memasukan Memasukan Informasi username dan password" classname="Skenario: Memasukan Memasukan Informasi username dan password" time="0"/>
+  <testcase name="Dengan Data barang yang akan dimasukkan tersedia dan tidak duplikasi" classname="Skenario: Mengelola Data Barang Baru" time="0"/>
+  <testcase name="Ketika Memasukkan data barang" classname="Skenario: Mengelola Data Barang Baru" time="0"/>
+  <testcase name="Maka respon menjadi &quot;data barang sukses dimasukan&quot;" classname="Skenario: Mengelola Data Barang Baru" time="0"/>
+  <testcase name="Skenario: Mengelola Data Barang Baru" classname="Skenario: Mengelola Data Barang Baru" time="0"/>
+  <testcase name="Dengan Data barang baru yang akan dimasukkan tersedia dan tidak duplikasi" classname="Skenario: Mengelola Data Barang Baru" time="0"/>
+  <testcase name="Ketika Memasukkan data barang" classname="Skenario: Mengelola Data Barang Baru" time="0"/>
+  <testcase name="Maka respon akan gagal dengan pesan &quot;duplikat&quot;" classname="Skenario: Mengelola Data Barang Baru" time="0"/>
+  <testcase name="Skenario: Mengelola Data Barang Baru" classname="Skenario: Mengelola Data Barang Baru" time="0"/>
 </testsuite>
