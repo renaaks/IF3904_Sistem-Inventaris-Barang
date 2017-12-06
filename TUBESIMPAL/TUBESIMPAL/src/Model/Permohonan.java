@@ -15,13 +15,23 @@ public class Permohonan {
     private String Jumlah_Barang;
     private String Keterangan;
     private String Status;
+    private String Id_Pemohon;
 
-    public Permohonan(String Kode_Permohonan, String Kode_Barang, String Jumlah_Barang, String Keterangan, String Status) {
+    public Permohonan(String Kode_Permohonan, String Kode_Barang, String Jumlah_Barang, String Keterangan, String Status, String Id_Pemohon) {
         this.Kode_Permohonan = Kode_Permohonan;
         this.Kode_Barang = Kode_Barang;
         this.Jumlah_Barang = Jumlah_Barang;
         this.Keterangan = Keterangan;
         this.Status = Status;
+        this.Id_Pemohon = Id_Pemohon;
+    }
+
+    public String getId_Pemohon() {
+        return Id_Pemohon;
+    }
+
+    public void setId_Pemohon(String Id_Pemohon) {
+        this.Id_Pemohon = Id_Pemohon;
     }
 
     public String getKode_Permohonan() {
