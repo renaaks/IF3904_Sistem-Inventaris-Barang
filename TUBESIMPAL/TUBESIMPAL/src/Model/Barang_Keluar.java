@@ -1,0 +1,68 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Model;
+
+/**
+ *
+ * @author Novelty Octaviani
+ */
+public class Barang_Keluar {
+    private String Kode_Barang;
+    private String Kode_Barang_Masuk;
+    private String Kode_Barang_Keluar;
+    private String Kondisi_Barang;
+    private String Tanggal_Keluar;
+
+    public Barang_Keluar(String Kode_Barang, String Kode_Barang_Masuk, String Kode_Barang_Keluar, String Kondisi_Barang, String Tanggal_Keluar) {
+        this.Kode_Barang = Kode_Barang;
+        this.Kode_Barang_Masuk = Kode_Barang_Masuk;
+        this.Kode_Barang_Keluar = Kode_Barang_Keluar;
+        this.Kondisi_Barang = Kondisi_Barang;
+        this.Tanggal_Keluar = Tanggal_Keluar;
+    }
+
+    public String getKode_Barang() {
+        return Kode_Barang;
+    }
+
+    public void setKode_Barang(String Kode_Barang) {
+        this.Kode_Barang = Kode_Barang;
+    }
+
+    public String getKode_Barang_Masuk() {
+        return Kode_Barang_Masuk;
+    }
+
+    public void setKode_Barang_Masuk(String Kode_Barang_Masuk) {
+        this.Kode_Barang_Masuk = Kode_Barang_Masuk;
+    }
+
+    public String getKode_Barang_Keluar() {
+        return Kode_Barang_Keluar;
+    }
+
+    public void setKode_Barang_Keluar(String Kode_Barang_Keluar) {
+        this.Kode_Barang_Keluar = Kode_Barang_Keluar;
+    }
+
+    public String getKondisi_Barang() {
+        return Kondisi_Barang;
+    }
+
+    public void setKondisi_Barang(String Kondisi_Barang) {
+        this.Kondisi_Barang = Kondisi_Barang;
+    }
+
+    public String getTanggal_Keluar() {
+        return Tanggal_Keluar;
+    }
+
+    public void setTanggal_Keluar(String Tanggal_Keluar) {
+        this.Tanggal_Keluar = Tanggal_Keluar;
+    }
+    
+    
+}
