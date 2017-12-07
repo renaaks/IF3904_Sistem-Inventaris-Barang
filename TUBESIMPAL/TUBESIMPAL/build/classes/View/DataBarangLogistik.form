@@ -246,6 +246,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="tfkodebarangdatabaranglogistik">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="tfnamabarangdatabaranglogistik">
             </Component>

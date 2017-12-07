@@ -6,6 +6,7 @@
 package View;
 
 import java.awt.event.ActionListener;
+import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -247,7 +248,15 @@ public class PendataanBarang extends javax.swing.JFrame {
         return tftanggalkeluarpemohon;
     }
 
-    
+    public void refresh(String s){
+        tfkodebarangmasukpemohon.setText(s);
+        tfkondisibarangpemohon.setText(s);
+        tftanggalkeluarpemohon.setText(s);
+        Random r = new Random();
+        int randId = r.nextInt(999-111) + 111;
+        tfbarangkeluarpemohon.setText("BRGKLR"+Integer.toString(randId));
+        
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnaddbarangkeluarpemohon;

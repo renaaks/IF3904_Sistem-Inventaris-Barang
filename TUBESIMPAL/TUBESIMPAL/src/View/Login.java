@@ -132,7 +132,12 @@ public class Login extends javax.swing.JFrame {
         return tfusername;
     }
 
-   
+    public void refresh(String s){
+        tfusername.setText(s);
+        tfpassword.setText(s);
+    }
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnlogin;
     private javax.swing.JLabel jLabel1;

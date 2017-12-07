@@ -34,6 +34,7 @@ public class MenuPemohon extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         btnpermohonanpemohon = new javax.swing.JButton();
         btnpendataanbarangpemohon = new javax.swing.JButton();
+        btnlogoutpemohon = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel1.setText("Menu Logistik");
@@ -49,6 +50,8 @@ public class MenuPemohon extends javax.swing.JFrame {
         btnpendataanbarangpemohon.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btnpendataanbarangpemohon.setText("Pendataan Barang");
 
+        btnlogoutpemohon.setText("Logout");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -63,6 +66,10 @@ public class MenuPemohon extends javax.swing.JFrame {
                     .addComponent(btnpermohonanpemohon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnpendataanbarangpemohon, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnlogoutpemohon, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(92, 92, 92))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -73,7 +80,9 @@ public class MenuPemohon extends javax.swing.JFrame {
                 .addComponent(btnpermohonanpemohon, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(btnpendataanbarangpemohon, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(209, Short.MAX_VALUE))
+                .addGap(74, 74, 74)
+                .addComponent(btnlogoutpemohon, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(98, Short.MAX_VALUE))
         );
 
         pack();
@@ -82,6 +91,7 @@ public class MenuPemohon extends javax.swing.JFrame {
     public void addListener(ActionListener e){
         btnpendataanbarangpemohon.addActionListener(e);
         btnpermohonanpemohon.addActionListener(e);
+        btnlogoutpemohon.addActionListener(e);
         
     }
     public JButton getBtnpendataanbarangpemohon() {
@@ -91,8 +101,15 @@ public class MenuPemohon extends javax.swing.JFrame {
     public JButton getBtnpermohonanpemohon() {
         return btnpermohonanpemohon;
     }
+
+    public JButton getBtnlogoutpemohon() {
+        return btnlogoutpemohon;
+    }
+    
+    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnlogoutpemohon;
     private javax.swing.JButton btnpendataanbarangpemohon;
     private javax.swing.JButton btnpermohonanpemohon;
     private javax.swing.JLabel jLabel1;

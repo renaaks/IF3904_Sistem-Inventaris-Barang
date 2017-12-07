@@ -38,7 +38,7 @@ public class PermohonanLogistik extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tabelpermohonanlogistik = new javax.swing.JTable();
+        tabelpermohonan = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
         tfkodepermohonanlogistik = new javax.swing.JTextField();
         rbterima = new javax.swing.JRadioButton();
@@ -49,19 +49,19 @@ public class PermohonanLogistik extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        tabelpermohonandisetujuilogistik = new javax.swing.JTable();
+        tabeldisetujui = new javax.swing.JTable();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        tabelpermohonanditolaklogistik = new javax.swing.JTable();
+        tabelditolak = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         btnbackpermohonanlogistik = new javax.swing.JButton();
-        btnlogoutpermohonanlogistik = new javax.swing.JButton();
+        btnlogout = new javax.swing.JButton();
 
         jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        tabelpermohonanlogistik.setModel(new javax.swing.table.DefaultTableModel(
+        tabelpermohonan.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -72,7 +72,7 @@ public class PermohonanLogistik extends javax.swing.JFrame {
                 "Kode Permohonan", "Kode Barang", "Id_Pemohon", "Jumlah Barang", "Keterangan"
             }
         ));
-        jScrollPane1.setViewportView(tabelpermohonanlogistik);
+        jScrollPane1.setViewportView(tabelpermohonan);
 
         jLabel2.setText("Kode Permohonan            : ");
 
@@ -92,7 +92,11 @@ public class PermohonanLogistik extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 605, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnaddpermohonanlogistik)
+                .addGap(183, 183, 183))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -108,9 +112,6 @@ public class PermohonanLogistik extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(0, 137, Short.MAX_VALUE)
-                                .addComponent(btnaddpermohonanlogistik))
                             .addComponent(tftanggalbarangmasuklogistik, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(tfkodepermohonanlogistik))
                         .addGap(170, 170, 170))))
@@ -124,22 +125,22 @@ public class PermohonanLogistik extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(tfkodepermohonanlogistik, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(tftanggalbarangmasuklogistik, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(tftanggalbarangmasuklogistik, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rbterima, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(rbtolak, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(1, 1, 1)
                 .addComponent(btnaddpermohonanlogistik)
-                .addGap(7, 7, 7))
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("Permohonan Barang", jPanel1);
 
-        tabelpermohonandisetujuilogistik.setModel(new javax.swing.table.DefaultTableModel(
+        tabeldisetujui.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -150,7 +151,7 @@ public class PermohonanLogistik extends javax.swing.JFrame {
                 "Kode Permohonan", "Kode Barang", "Id_Pemohon", "Jumlah Barang", "Keterangan"
             }
         ));
-        jScrollPane2.setViewportView(tabelpermohonandisetujuilogistik);
+        jScrollPane2.setViewportView(tabeldisetujui);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -167,7 +168,7 @@ public class PermohonanLogistik extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Disetujui", jPanel2);
 
-        tabelpermohonanditolaklogistik.setModel(new javax.swing.table.DefaultTableModel(
+        tabelditolak.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -178,7 +179,7 @@ public class PermohonanLogistik extends javax.swing.JFrame {
                 "Kode Permohonan", "Kode Barang", "Id_Pemohon", "Jumlah Barang", "Keterangan"
             }
         ));
-        jScrollPane3.setViewportView(tabelpermohonanditolaklogistik);
+        jScrollPane3.setViewportView(tabelditolak);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -200,7 +201,7 @@ public class PermohonanLogistik extends javax.swing.JFrame {
 
         btnbackpermohonanlogistik.setText("BACK");
 
-        btnlogoutpermohonanlogistik.setText("Logout");
+        btnlogout.setText("Logout");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -215,7 +216,7 @@ public class PermohonanLogistik extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(btnbackpermohonanlogistik)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnlogoutpermohonanlogistik)
+                .addComponent(btnlogout)
                 .addGap(33, 33, 33))
         );
         layout.setVerticalGroup(
@@ -227,7 +228,7 @@ public class PermohonanLogistik extends javax.swing.JFrame {
                 .addComponent(jTabbedPane1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnlogoutpermohonanlogistik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnlogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnbackpermohonanlogistik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -238,7 +239,7 @@ public class PermohonanLogistik extends javax.swing.JFrame {
     public void addListener(ActionListener e){
         btnaddpermohonanlogistik.addActionListener(e);
         btnbackpermohonanlogistik.addActionListener(e);
-        btnlogoutpermohonanlogistik.addActionListener(e);
+        btnlogout.addActionListener(e);
                 
     }
     public JButton getBtnaddpermohonanlogistik() {
@@ -250,7 +251,7 @@ public class PermohonanLogistik extends javax.swing.JFrame {
     }
 
     public JButton getBtnlogoutpermohonanlogistik() {
-        return btnlogoutpermohonanlogistik;
+        return btnlogout;
     }
 
     public JRadioButton getRbterima() {
@@ -262,15 +263,15 @@ public class PermohonanLogistik extends javax.swing.JFrame {
     }
 
     public JTable getTabelpermohonandisetujuilogistik() {
-        return tabelpermohonandisetujuilogistik;
+        return tabeldisetujui;
     }
 
     public JTable getTabelpermohonanditolaklogistik() {
-        return tabelpermohonanditolaklogistik;
+        return tabelditolak;
     }
 
     public JTable getTabelpermohonanlogistik() {
-        return tabelpermohonanlogistik;
+        return tabelpermohonan;
     }
 
     public JTextField getTfkodepermohonanlogistik() {
@@ -280,12 +281,16 @@ public class PermohonanLogistik extends javax.swing.JFrame {
     public JTextField getTftanggalbarangmasuklogistik() {
         return tftanggalbarangmasuklogistik;
     }
-   
+    
+    public void refresh(String s){
+        tfkodepermohonanlogistik.setText(s);
+        tftanggalbarangmasuklogistik.setText(s);
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnaddpermohonanlogistik;
     private javax.swing.JButton btnbackpermohonanlogistik;
-    private javax.swing.JButton btnlogoutpermohonanlogistik;
+    private javax.swing.JButton btnlogout;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -301,9 +306,9 @@ public class PermohonanLogistik extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JRadioButton rbterima;
     private javax.swing.JRadioButton rbtolak;
-    private javax.swing.JTable tabelpermohonandisetujuilogistik;
-    private javax.swing.JTable tabelpermohonanditolaklogistik;
-    private javax.swing.JTable tabelpermohonanlogistik;
+    private javax.swing.JTable tabeldisetujui;
+    private javax.swing.JTable tabelditolak;
+    private javax.swing.JTable tabelpermohonan;
     private javax.swing.JTextField tfkodepermohonanlogistik;
     private javax.swing.JTextField tftanggalbarangmasuklogistik;
     // End of variables declaration//GEN-END:variables

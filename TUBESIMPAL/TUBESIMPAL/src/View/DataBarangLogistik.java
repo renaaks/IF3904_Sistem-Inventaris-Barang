@@ -6,6 +6,7 @@
 package View;
 
 import java.awt.event.ActionListener;
+import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -91,6 +92,8 @@ public class DataBarangLogistik extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setText("Jumlah Barang :");
+
+        tfkodebarangdatabaranglogistik.setEditable(false);
 
         tfjumlahbarangdatabaranglogistik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -236,6 +239,14 @@ public class DataBarangLogistik extends javax.swing.JFrame {
         return tfnamabarangdatabaranglogistik;
     }
 
+    public void refresh(String s){
+        tfjenisbarangdatabaranglogistik.setText(s);
+        tfjumlahbarangdatabaranglogistik.setText(s);
+        tfnamabarangdatabaranglogistik.setText(s);
+        Random r = new Random();
+        int randId = r.nextInt(999-111) + 111;
+        tfkodebarangdatabaranglogistik.setText("BRG"+Integer.toString(randId));
+    }
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
