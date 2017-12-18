@@ -1,0 +1,6 @@
+projectKey=com.mycompany:SistemInventarisBarang
+serverUrl=http://localhost:9000
+serverVersion=6.7.0.33306
+dashboardUrl=http://localhost:9000/dashboard/index/com.mycompany:SistemInventarisBarang
+ceTaskId=AWBoQpn9j0IoygrIlTV4
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWBoQpn9j0IoygrIlTV4
